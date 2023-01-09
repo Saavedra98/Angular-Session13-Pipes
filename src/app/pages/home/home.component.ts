@@ -9,7 +9,7 @@ export class HomeComponent {
 
   valor = "";
   moneda = 0;
-  tipo!: String; 
+  tipo = "S/."; 
 
   cambioUSD(){
     this.tipo = "USD";
