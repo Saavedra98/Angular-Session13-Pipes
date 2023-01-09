@@ -1,0 +1,29 @@
+<div class="container ">
+    <h2>USO DE PIPES</h2>
+    <div class="mb-3">
+        <label class="form-label">Valor</label>
+        <input [(ngModel)]="valor" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <p class="my-2"><span class="font-bold">Resultado -></span>
+            {{ valor | uppercase}}
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <h2> CURRENCY PIPES</h2>
+    <div class="mb-3">
+        <label class="form-label">Valor</label>
+        <input [(ngModel)]="moneda" type="number" class="form-control">
+        <button type="button" class="btn btn-primary mt-2 mx-2 px-5" value="USD" (click)="cambioUSD()" >USD</button>
+        <button type="button" class="btn btn-secondary mt-2 px-5" value="EUR" (click)="cambioEUR()">EUR</button>
+    </div>
+    <div class="mb-3">
+        <p class="my-2"><span class="font-bold">Resultado -></span>
+            {{ moneda | currency }}
+        </p>
+    </div>
+
+</div>
