@@ -9,14 +9,17 @@ export class HomeComponent {
 
   valor = "";
   moneda = 0;
-  tipo = "S/."; 
+  tipo = ""; 
+  element = false;
 
   cambioUSD(){
     this.tipo = "USD";
+    this.element=true;
   }
 
   cambioEUR(){
     this.tipo="EUR";
+    this.element=true
   }
 
 
