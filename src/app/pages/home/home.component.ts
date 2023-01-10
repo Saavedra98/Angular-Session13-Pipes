@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  valor = "";
-  moneda = 0;
+  name !: string;
+  currency !: number;
   tipo = ""; 
   element = false;
 
@@ -22,6 +22,35 @@ export class HomeComponent {
     this.element=true
   }
 
+  users = [
+    {
+      "Apellido" : "Arcilla",
+      "Casado" : false,
+      "Direccion" : "Calle 35 # 43 28",
+      "Nombre" : "Diego",
+      "Telefono" : 3859720
+    },
+    {
+      "Apellido" : "Bueno",
+      "Casado" : false,
+      "Direccion" : "CR 16A # 53 28",
+      "Nombre" : "Kevin",
+      "Telefono" : 31485579954
+    },
+    {
+      "Apellido" : "Palomino",
+      "Casado" : false,
+      "Direccion" : "CR 25 # 52 33",
+      "Nombre" : "Natalia",
+      "Telefono" : 32255945555
+    }
+  ]
 
+  condicion = false;
 
+  mostrar(){
+    this.condicion = true;
+    
+  }
+  
 }
